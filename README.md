@@ -17,10 +17,10 @@ Chris Mangelsdorf has published the MATLAB code upon which this is based to his 
 
 ## Example Data
 A system with the loop gain illustrated in this bode plot:
-![Example Bode Plot](/example_bodeplot.pdf)
+![Example Bode Plot](/example_bodeplot.png)
 
 is plotted on the nichols surface, with the following results:
-![Example Nichols Plot](/example_nicholsplot.pdf)
+![Example Nichols Plot](/example_nicholsplot.png)
 
 Note that both positive __and negative frequencies__ were used to generate this plot.
 
