@@ -47,7 +47,7 @@ H_mag_dB = control.mag2db(np.abs(H))
 # Plotting the 3D Nichols Surface
 plt.figure(2)
 ax = plt.axes(projection='3d')
-ax.plot_surface(control.mag2db(mag_sweep), phase_sweep, H_mag_dB, cmap=cm.viridis, alpha=0.75, zorder=1)
+ax.plot_surface(control.mag2db(mag_sweep), phase_sweep, H_mag_dB, cmap=cm.viridis, alpha=0.85, zorder=1)
 
 
 
@@ -67,25 +67,5 @@ sys_CL_phase = sys_CL_phase * (180/pi)
 ax.plot(sys_LG_mag, sys_LG_phase, sys_CL_mag, zorder=10)
 
 
-
-# Plotting a first order system
-#tf_1ord = 1 / (1+s)
-
-#mag,phase,w = control.bode(tf_1ord, Hz=True, dB=True, Plot=False)
-
-# plt.figure()
-# plt.plot(w, control.mag2db(mag))
-# plt.xscale('log')
-# plt.yscale('linear')
-# plt.grid()
-
-
-# plt.figure()
-# plt.plot(w, (180/math.pi)*phase)
-# plt.xscale('log')
-# plt.yscale('linear')
-# plt.grid()
-
 plt.show()
 
-print("pause")
