@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sourceNicholsplottingScript",
+            "type": "shell",
+            "command":"source /projects/aw/nicholsplotting/sourceme"
+        }
+    ]
+}
